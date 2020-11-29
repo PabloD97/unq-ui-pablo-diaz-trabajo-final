@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom";
 
 const Partida = () => {
   return (
@@ -9,7 +10,11 @@ const Partida = () => {
         </h1>
       </div>
       <div>
-        <button></button>
+        <Link to="/resultado"><button>Piedra</button></Link>  
+        <Link to="/resultado"><button>Papel</button></Link>
+        <Link to="/resultado"><button>Tijera</button></Link>
+        <Link to="/resultado"><button>Lagarto</button></Link>
+        <Link to="/resultado"><button>Spock</button></Link>          
       </div>
     </div>
   )
