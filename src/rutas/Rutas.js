@@ -9,7 +9,7 @@ const Rutas = () => {
     return (
         <BrowserRouter>
             <Switch>
-                <Route path="/resultado" component={Resultado} />
+                <Route path="/resultado/:jugadorEligio" component={Resultado} />
                 <Route path="/partida" component={Partida} />
                 <Route path="/" component={App} />
             </Switch>
