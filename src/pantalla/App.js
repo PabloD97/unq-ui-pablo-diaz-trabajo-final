@@ -1,6 +1,12 @@
 import React from "react"
+import { Link } from "react-router-dom";
 
 const App = () => {
+
+  const handleClick = (event) =>{
+    
+  }
+
   return (
     <div>
       <div>
@@ -10,9 +16,10 @@ const App = () => {
         </h1>
       </div>
       <div>
-        <button>
-          jugar contra la CPU
-        </button>
+        <Link to='/partida'>
+        Jugar contra la CPU
+        </Link>
+          
       </div>
     </div>
   )
