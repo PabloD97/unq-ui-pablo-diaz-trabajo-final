@@ -1,0 +1,11 @@
+.card {
+    width: 28%;
+    position: absolute;
+    left: 35%;
+    margin-top: 8% ;
+    border-radius: 5%;
+}
+
+.botonCentrado {
+    margin-left: 40%;
+}

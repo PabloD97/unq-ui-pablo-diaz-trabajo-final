@@ -1,0 +1,16 @@
+.padre {
+ 
+    text-align: center;
+  }
+
+.separator {
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 55%;
+    border-style: dashed;
+    border-color: black;
+}
+
+.botonVolver {
+    margin-top: 4%;
+}

@@ -5,6 +5,7 @@ import papel from '../imagenes/papel.png';
 import tijera from '../imagenes/tijera.png';
 import lagarto from '../imagenes/lagarto.png';
 import spock from '../imagenes/spock.png';
+import '../css/Resultado.css';
 
 const Resultado = () => {
 
@@ -12,7 +13,7 @@ const Resultado = () => {
 
 
     const [seleccionCPU, setSeleccionCPU] = useState({});
-    const [partidaFinalizada, setPartidaFinalizada] = useState(false);
+
 
     const opciones = [
         { seleccion: "tijera", ganaA: ["papel", "lagarto"], imagen: tijera },
@@ -33,12 +34,12 @@ const Resultado = () => {
 
     const elegirGanador = () => {
         if (seleccionCPU.ganaA.includes(jugadorEligio)) {
-            return (<div>Ha ganado la CPU</div>)
+            return (<div><h2>Ha ganado la CPU</h2></div>)
         };
         if (ganoJugador(jugadorEligio)) {
-            return (<div>Ha ganado el jugador</div>)
+            return (<div><h2>Ha ganado el jugador</h2></div>)
         } else {
-            return (<div>Empate</div>)
+            return (<div><h2>Empate</h2></div>)
         }
     };
 
@@ -57,14 +58,14 @@ const Resultado = () => {
     }
 
     return (
-        <div>
+        <div className='centrado'>
             <div>
                 <h1>
-                    Esto es un resultado
+                    Resultado de la partida:
                 </h1>
                 {console.log(seleccionCPU)}
-                <p>El jugador eligio: <img src={jugadorEligioImg()} /> </p>
-                <p>La CPU eligio:   <img src={seleccionCPU.imagen} /></p>
+                <p><h3>El jugador eligio:<img src={jugadorEligioImg()} className='separatorR'/></h3> </p>
+                <p><h3>La CPU eligio:            <img src={seleccionCPU.imagen} className='separatorR'/></h3></p>
             </div>
             <div>
                 {seleccionCPU.seleccion && jugadorEligio && elegirGanador()}
@@ -72,7 +73,7 @@ const Resultado = () => {
 
             <div>
                 <Link to="/partida">
-                    <button>
+                    <button className="btn btn-primary">
                         ¡Volver a jugar!
                     </button>
                 </Link>
