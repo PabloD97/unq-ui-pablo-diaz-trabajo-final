@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const App = () => {
 
-  const handleClick = (event) =>{
-    
+  const handleClick = (event) => {
+
   }
 
   return (
@@ -17,9 +17,10 @@ const App = () => {
       </div>
       <div>
         <Link to='/partida'>
-        Jugar contra la CPU
+          <button>
+            Jugar contra la CPU
+          </button>
         </Link>
-          
       </div>
     </div>
   )

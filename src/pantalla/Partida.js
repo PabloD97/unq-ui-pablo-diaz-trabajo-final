@@ -1,5 +1,10 @@
 import React, {useState} from "react"
 import { Link } from "react-router-dom";
+import piedra from '../imagenes/piedra.png';
+import papel from '../imagenes/papel.png';
+import tijera from '../imagenes/tijera.png';
+import lagarto from '../imagenes/lagarto.png';
+import spock from '../imagenes/spock.png';
 
 const Partida = () => {
 
@@ -11,12 +16,21 @@ const Partida = () => {
         </h1>
       </div>
       <div>
-        <Link to="/resultado/piedra"><button>Piedra</button></Link>  
-        <Link to="/resultado/papel"><button>Papel</button></Link>
-        <Link to="/resultado/tijera"><button>Tijera</button></Link>
-        <Link to="/resultado/lagarto"><button>Lagarto</button></Link>
-        <Link to="/resultado/spock"><button>Spock</button></Link>          
+        <Link to="/resultado/piedra"><img src={piedra}/></Link>  
+        <Link to="/resultado/papel"><img src={papel}/></Link>
+        <Link to="/resultado/tijera"><img src={tijera}/></Link>
+        <Link to="/resultado/lagarto"><img src={lagarto}/></Link>
+        <Link to="/resultado/spock"><img src={spock}/></Link>          
       </div>
+
+      <div>
+        <Link to="/">
+          <button>
+            Volver atras
+          </button>
+        </Link>
+      </div>
+
     </div>
   )
 }
