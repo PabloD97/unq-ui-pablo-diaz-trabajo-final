@@ -42,11 +42,11 @@ const Resultado = () => {
     const elegirGanador = () => {
         if (seleccionCPU.ganaA.includes(jugadorEligio)) {
             newPuntosPC += 1;
-            return (<div><h2>Ha ganado la CPU</h2></div>)
+            return (<div><h2>Ha ganado la CPU :( </h2></div>)
         };
         if (ganoJugador(jugadorEligio)) {
             newPuntosP += 1;
-            return (<div><h2>Ha ganado el jugador</h2></div>)
+            return (<div><h2>Has ganado!</h2></div>)
         } else {
             return (<div><h2>Empate</h2></div>)
         }
