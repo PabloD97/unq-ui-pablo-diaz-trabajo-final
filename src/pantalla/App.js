@@ -16,7 +16,7 @@ const App = () => {
         </h1>
       </div>
       <div>
-        <Link to={`/partida/0/0`}>
+        <Link to="/partida/0/0">
           <button className="btn btn-primary">
             Jugar contra la CPU
           </button>

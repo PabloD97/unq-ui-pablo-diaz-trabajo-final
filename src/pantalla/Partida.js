@@ -14,13 +14,28 @@ const Partida = () => {
   const { puntosP } = useParams();
   const { puntosPC } = useParams();
 
+  let puntosPlayer = parseInt(puntosP);
+  let puntosDePC = parseInt(puntosPC);
+
+
+  const vaGanando = () => {
+    if(puntosPlayer > puntosDePC){
+      return ("Vas ganando :D ")
+    }
+    if(puntosDePC > puntosP){
+      return("Vas perdiendo :'(")
+    }else{
+      return("Van empatados")
+    }
+  }
 
   return (
     <div>
       <div className='puntuacion'>
         <h1>Puntaciones:</h1>
-        <h5>El jugador va: {puntosP}</h5>
-        <h5>La cpu va: {puntosPC}</h5>
+        <h5>El jugador va: {puntosP} puntos</h5>
+        <h5>La cpu va: {puntosPC} puntos</h5>
+        <h5>{vaGanando()}</h5>
       </div>
       <div className="padre">
         <div>
