@@ -72,7 +72,6 @@ const Resultado = () => {
                 <h1>
                     Resultado de la partida:
                 </h1>
-                {console.log(seleccionCPU)}
                 <p><h3>El jugador eligio:<img src={jugadorEligioImg()} className='separatorR'/></h3> </p>
                 <p><h3>La CPU eligio:            <img src={seleccionCPU.imagen} className='separatorR'/></h3></p>
             </div>
@@ -84,7 +83,7 @@ const Resultado = () => {
                 <Link to={`/partida/${newPuntosP}/${newPuntosPC}`}>
                     <button className="btn btn-primary">
                         ¡Volver a jugar!
-                    </button>
+                    </button> 
                 </Link>
             </div>
 
