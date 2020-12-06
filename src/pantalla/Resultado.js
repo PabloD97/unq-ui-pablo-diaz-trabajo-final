@@ -15,6 +15,13 @@ const Resultado = () => {
     const [seleccionCPU, setSeleccionCPU] = useState({});
 
 
+    const {puntosP} = useParams();
+    const {puntosPC} = useParams();
+
+    let newPuntosP  = parseInt(puntosP);
+    let newPuntosPC = parseInt(puntosPC);
+
+
     const opciones = [
         { seleccion: "tijera", ganaA: ["papel", "lagarto"], imagen: tijera },
         { seleccion: "papel", ganaA: ["piedra", "spock"], imagen: papel },
@@ -34,9 +41,11 @@ const Resultado = () => {
 
     const elegirGanador = () => {
         if (seleccionCPU.ganaA.includes(jugadorEligio)) {
+            newPuntosPC += 1;
             return (<div><h2>Ha ganado la CPU</h2></div>)
         };
         if (ganoJugador(jugadorEligio)) {
+            newPuntosP += 1;
             return (<div><h2>Ha ganado el jugador</h2></div>)
         } else {
             return (<div><h2>Empate</h2></div>)
@@ -72,7 +81,7 @@ const Resultado = () => {
             </div>
 
             <div>
-                <Link to="/partida">
+                <Link to={`/partida/${newPuntosP}/${newPuntosPC}`}>
                     <button className="btn btn-primary">
                         ¡Volver a jugar!
                     </button>

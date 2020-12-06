@@ -11,8 +11,8 @@ const Rutas = () => {
         <BrowserRouter>
             <Switch>
                 <Route path='/reglas' component = {Reglas}/>
-                <Route path="/resultado/:jugadorEligio" component={Resultado} />
-                <Route path="/partida" component={Partida} />
+                <Route path="/resultado/:jugadorEligio/:puntosP/:puntosPC" component={Resultado} />
+                <Route path="/partida/:puntosP/:puntosPC" component={Partida} />
                 <Route path="/" component={App} />
             </Switch>
         </BrowserRouter>

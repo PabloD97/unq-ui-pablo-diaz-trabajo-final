@@ -1,6 +1,6 @@
 .padre {
  
-    text-align: center;
+    align-content: center;
   }
 
 .separator {
@@ -9,6 +9,10 @@
     border-radius: 55%;
     border-style: dashed;
     border-color: black;
+}
+
+.puntuacion {
+    text-align: center;
 }
 
 .botonVolver {
