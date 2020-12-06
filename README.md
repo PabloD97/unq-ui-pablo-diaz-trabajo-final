@@ -7,7 +7,7 @@ Requerido para gestionar package
 ```
 
 ## Instalacion de dependencias
-Nos alojamos con la consola en la ubicacion root del proyecto, en la misma raiz de package.json y ejecutamos el siguiente comando. Esto hara que el gestor de paquetes se encargue de descargar todos los modulos especificados en dicho archivo json.
+Abrimos la consola en la ubicacion root del proyecto, en la misma raiz de package.json y ejecutamos el siguiente comando. Esto hara que el gestor de paquetes se encargue de descargar todos los modulos especificados en dicho archivo json.
 
 ```bash
  npm install
@@ -18,5 +18,5 @@ Nos alojamos con la consola en la ubicacion root del proyecto, en la misma raiz 
 ```bash
 npm start
 ```
-La aplicacion se alojara en el puerto 3000
+Luego de haber ejecutado el comando de arriba, se nos abrira una pestaña en nuestro browser predeterminado en el puerto 3000(localhost:3000)
 
