@@ -7,14 +7,14 @@ Requerido para gestionar package
 ```
 
 ## Instalacion de dependencias
-Abrimos la consola en la ubicacion root del proyecto, en la misma raiz de package.json y ejecutamos el siguiente comando. Esto hara que el gestor de paquetes se encargue de descargar todos los modulos especificados en dicho archivo json.
+Abrimos la consola en la ubicacion root del proyecto, en la misma raiz de package.json y ejecutamos los siguientes comandos. Esto hara que el gestor de paquetes se encargue de descargar todos los modulos especificados en dicho archivo json.
 
 ```bash
- npm install
+  npm install
  ```
  
- ```bash
- npm install react-router-dom
+```bash
+  npm install react-router-dom
  ```
 
 
