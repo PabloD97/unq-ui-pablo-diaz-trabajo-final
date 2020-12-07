@@ -12,6 +12,10 @@ Abrimos la consola en la ubicacion root del proyecto, en la misma raiz de packag
 ```bash
  npm install
  ```
+ 
+ ```bash
+ npm install react-router-dom
+ ```
 
 
 ## Ejecutar la aplicacion
