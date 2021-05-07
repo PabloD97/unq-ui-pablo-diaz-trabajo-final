@@ -24,3 +24,6 @@ npm start
 ```
 Luego de haber ejecutado el comando de arriba, se nos abrira una pestaña en nuestro browser predeterminado en el puerto 3000(localhost:3000)
 
+## Tambien podes jugar haciendo click en el siguiente enlace
+[Piedra, papel, tijera, lagarto o spock](https://vigilant-raman-8492fc.netlify.app/)
+
