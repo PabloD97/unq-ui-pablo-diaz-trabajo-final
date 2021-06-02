@@ -1,6 +1,11 @@
 
 # Proyecto Final de Cons.De UI: Piedra, papel, tijera, lagarto o spock. 
 
+## Tecnologías
+El proyecto se realizo con las siguientes tecnologías.
+  - ReactJs
+  - Bootstrap
+
 ## Instalar [NodeJS](https://nodejs.org/es/)
 ```bash
 Requerido para gestionar package 
