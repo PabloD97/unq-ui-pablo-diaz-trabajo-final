@@ -5,6 +5,9 @@
 El proyecto se realizo con las siguientes tecnologías.
   - ReactJs
   - Bootstrap
+  - Html
+  - Css
+  - JavaScript
 
 ## Instalar [NodeJS](https://nodejs.org/es/)
 ```bash
